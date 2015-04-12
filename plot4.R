@@ -65,7 +65,8 @@ lines(dateandtime,
 
 ##now add legend
 legend("topright",lty=1, col=c("black","red","blue"),
-       legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+       legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
+       bty="n") ## no box around the legend
 
 ## Next do plot of reactive_power v datetime
 
@@ -74,5 +75,5 @@ plot(dateandtime,data_0$Global_reactive_power,
      ylab="Global_reactive_power",
      xlab="datetime")
 
-dev.off()
 
+dev.off()
