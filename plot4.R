@@ -37,7 +37,7 @@ par(mfrow=c(2,2))
 plot(dateandtime,
      data_0$Global_active_power,
      type="l", ## line, not circles
-     ylab="Global Active Power (kilowatts)", ## y axis label
+     ylab="Global Active Power", ## y axis label
      xlab="") ## no x axis label
 
 ## Next do plot of voltage v datetime
